@@ -1,1 +1,1 @@
-(()=>{"use strict";!function(){let e=document.getElementById("content"),t=document.createElement("div");t.classList.add("homePage"),e.appendChild(t)}(),console.log("simple")})();
+(()=>{"use strict";!function(){let e=document.getElementById("content"),t=document.createElement("div"),d=document.createElement("img");t.classList.add("homePage"),e.appendChild(t),d.classList.add("homeBakery"),d.src="baked_goods.png",t.appendChild(d)}(),console.log("simple")})();
