@@ -1,6 +1,7 @@
 
-import { homePage } from './homepage'
+import { homePage, menuBar } from './homepage'
 
 
 homePage();
+menuBar();
 console.log("simple");
