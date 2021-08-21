@@ -10,17 +10,21 @@ homePageBody.classList.add("homePage");
 content.appendChild(homePageBody);
 
  
-toastiesBakery.classList.add("homeBakery")
+toastiesBakery.classList.add("homeBakery");
 toastiesBakery.src = "baked_goods.png";
 
 homePageBody.appendChild(toastiesBakery);
 
+homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
+
 }
 
-function menuBar(){
-    let menuBar = document.createElement("div");
-    menuBar.setAttribute("id", "menuBar");
-    content.appendChild(menuBar);
+function paragraphFunc(info){
+
+    let paragraph = document.createElement("p");
+    paragraph.textContent = info;
+    return paragraph;
+
 }
 
-export { homePage, menuBar}
+export { homePage }
