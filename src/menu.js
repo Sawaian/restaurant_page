@@ -2,6 +2,9 @@
 // import { paragraphFunc } from './homepage'
 
 let content = document.getElementById("content");
+let menuGrid = document.createElement("div");
+menuGrid.setAttribute("class", "menuGrid");
+content.appendChild(menuGrid);
 
 function menu(){
     menuItem();
@@ -19,7 +22,7 @@ let menuItem = () => {
                 menuItem.setAttribute("class", "menuItem");
                 menuItem.setAttribute("id", "menuItem" + " " + `${i}`);
 
-            content.appendChild(menuItem);
+            menuGrid.appendChild(menuItem);
 
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
