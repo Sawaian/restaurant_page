@@ -11,12 +11,24 @@ function menu(){
 let menuItem = () => {
 
     menuArray.forEach(element => {
-        let menuItem = document.createElement("div")
-        content.appendChild(menuItem);
-        menuItem.appendChild(paragraphFunc(`${element.foodName}`));
-        menuItem.appendChild(paragraphFunc(`${element.foodPrice}`));
+        
+            let i = idCounter();
+            let menuItem = document.createElement("div");
+            menuItem.setAttribute("class", "menuItem");
+            content.appendChild(menuItem);
+            menuItem.appendChild(paragraphFunc(`${element.foodName}`));
+            menuItem.appendChild(paragraphFunc(`${element.foodPrice}`));
+        
+       
 
     });
+
+    function idCounter(){
+     for(let i = 0; i < content.length; i++){
+         menuItem.setAttribute("id", `${i}` + "menuItem")
+     }
+    }
+
 
 }
 

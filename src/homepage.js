@@ -27,4 +27,4 @@ function paragraphFunc(info){
 
 }
 
-export { homePage }
+export { homePage, paragraphFunc }
