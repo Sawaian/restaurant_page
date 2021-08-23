@@ -13,7 +13,7 @@ content.appendChild(homePageBody);
 toastiesBakery.classList.add("homeBakery");
 toastiesBakery.src = "baked_goods.png";
 
-homePageBody.appendChild(toastiesBakery);
+content.appendChild(toastiesBakery);
 
 homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
 

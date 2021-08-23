@@ -1,4 +1,9 @@
 .homeBakery{
-   width: 1000%;
+   width: 10%;
    height: 10%;
+}
+
+.menuGrid{
+   display: grid;
+   border: solid;
 }

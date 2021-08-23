@@ -1,6 +1,7 @@
 
-import { homePage } from './homepage'
-import { menu } from './menu'
+import { homePage } from './homepage';
+import { menu } from './menu';
+import './styles.css';
 
 
 let content = document.getElementById("content");
