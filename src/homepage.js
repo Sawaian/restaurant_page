@@ -1,8 +1,5 @@
 
 let content = document.getElementById("content");
-let head = document.querySelector(".head");
-let headerTwo = document.createElement("h2");
-head.appendChild(headerTwo);
 
 
 function homePage(){
@@ -17,7 +14,7 @@ content.appendChild(homePageBody);
 toastiesBakery.classList.add("homeBakery");
 toastiesBakery.src = "baked_goods.png";
 
-headerTwo.appendChild(toastiesBakery);
+content.appendChild(toastiesBakery);
 
 homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
 

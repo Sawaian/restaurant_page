@@ -1,14 +1,27 @@
 .homeBakery{
-   width: 10%;
-   height: 10%;
+   width: 2fr, 50%;
+   height: 100%;
+   grid-row: 1;
 }
 
 .menuGrid{
    display: grid;
    box-sizing: border-box;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(8, 1fr) ;
 }
 
 .homePage{
    display: grid;
    
+}
+
+#content{
+   display: grid;
+   grid-template-rows: 1fr, 1fr, 1fr;
+}
+
+#menuBar{
+   grid-row: 1;
+   box-sizing: border-box;
 }
