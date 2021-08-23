@@ -23,7 +23,6 @@ let menuItem = () => {
                 menuItem.setAttribute("id", "menuItem" + " " + `${i}`);
 
             menuGrid.appendChild(menuItem);
-
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
 

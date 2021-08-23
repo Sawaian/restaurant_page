@@ -5,5 +5,10 @@
 
 .menuGrid{
    display: grid;
-   border: solid;
+   box-sizing: border-box;
+}
+
+.homePage{
+   display: grid;
+   
 }
