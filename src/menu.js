@@ -10,24 +10,24 @@ function menu(){
 
 let menuItem = () => {
 
-    menuArray.forEach(element => {
-        
+
+
+    // menuArray.forEach(element => 
+    
+    for(let i = 0; i < menuArray.length; i++){
             let menuItem = document.createElement("div");
-            for(let i = 0; i < menuArray.length; i++){
                 menuItem.setAttribute("class", "menuItem");
                 menuItem.setAttribute("id", "menuItem" + " " + `${i}`);
 
-            }
-
             content.appendChild(menuItem);
 
-            menuItem.appendChild(paragraphFunc(`${element.foodName}`));
-            menuItem.appendChild(paragraphFunc(`${element.foodPrice}`));
+            menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
+            menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
 
         
        
 
-    });
+    };
 
 
 
