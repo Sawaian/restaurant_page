@@ -6,12 +6,12 @@ import './styles.css';
 
 let content = document.getElementById("content");
 
-function menuBar(){
-    let menuBar = document.createElement("div");
-    menuBar.setAttribute("id", "menuBar");
-    content.appendChild(menuBar);
+function navBar(){
+    let navBar = document.createElement("div");
+    navBar.setAttribute("id", "navBar");
+    content.appendChild(navBar);
 }
 homePage();
-menuBar();
+navBar();
 menu();
 console.log("simple");

@@ -16,7 +16,7 @@ toastiesBakery.src = "baked_goods.png";
 
 content.appendChild(toastiesBakery);
 
-homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
+// homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
 
 }
 

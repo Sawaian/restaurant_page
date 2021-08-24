@@ -20,7 +20,7 @@ let menuItem = () => {
     for(let i = 0; i < menuArray.length; i++){
             let menuItem = document.createElement("div");
                 menuItem.setAttribute("class", "menuItem");
-                menuItem.setAttribute("id", "menuItem" + " " + `${i}`);
+                menuItem.setAttribute("id", "menuItem" + `${i}`);
 
             menuGrid.appendChild(menuItem);
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
