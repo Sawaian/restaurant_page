@@ -4,20 +4,30 @@ import { menu } from './menu';
 import './styles.css';
 
 
+
 let content = document.getElementById("content");
+let home = false;
 
 function navBar (){
     let navBar = document.createElement("div");
     navBar.setAttribute("id", "navBar");
     content.appendChild(navBar);
-}
+    
+    let homepage = document.createElement("button");
+    homepage.setAttribute("id", "homeButton");
+    homepage.textContent = "homepage";
+    navBar.appendChild(homepage);
 
-navBar();
+    homepage.addEventListener('click', ()=> {
+        home = true;
+        tab();
+    })
+}
 
 
 function tab(){
-    if(homepage === true){
-        homepage();
+    if(home === true){
+        homePage();
     }
     else if(menu === true){
         menu();
@@ -27,7 +37,5 @@ function tab(){
     }
 }
 
-homePage();
-
-menu();
+navBar();
 console.log("simple");
