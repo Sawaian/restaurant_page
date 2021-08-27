@@ -26,9 +26,9 @@ let menuItem = () => {
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
 
-        
-       
-
+        return {
+            menuItem,
+        }
     };
 
 
@@ -60,4 +60,4 @@ let matchaBread = foodItem("matcha bread", "4.00");
 
 let menuArray = [matchaBread, breadLoaf]
 
-export { menu }
+export { menu, menuItem }
