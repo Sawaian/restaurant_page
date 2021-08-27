@@ -19,8 +19,9 @@ function navBar (){
     navBar.appendChild(homepage);
 
     homepage.addEventListener('click', ()=> {
+        if(home != true){
         home = true;
-        tab();
+        tab();}
     })
 }
 
