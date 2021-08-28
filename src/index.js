@@ -33,6 +33,11 @@ const navMenu = (() => {
     menuBtn.textContent = "menu";
     navBar.appendChild(menuBtn);
 
+    let contactBtn = document.createElement("button");
+    contactBtn.setAttribute("id", "contactButton");
+    contactBtn.textContent = "contact";
+    navBar.appendChild(contactBtn);
+
     return { 
         homepage,
         menuBtn,
