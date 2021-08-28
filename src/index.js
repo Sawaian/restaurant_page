@@ -64,7 +64,8 @@ function tab(){
 
 
 function pageClear(){
-    if(menuTab === true){
+    if(menuTab != true){
+        let menuList = document.querySelectorAll(".menuItem");
         for(let i = 0; i < menuList.length; i++){
             menuList[i].remove()
         }

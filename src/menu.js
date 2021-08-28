@@ -1,17 +1,28 @@
 
 // import { paragraphFunc } from './homepage'
 
+
+const gridFactory = () => {
 let content = document.getElementById("content");
 let menuGrid = document.createElement("div");
 menuGrid.setAttribute("class", "menuGrid");
 content.appendChild(menuGrid);
 
-function menu(){
-    menuItem();
+return {
+    menuGrid,
+    content,
+}
 
 }
 
-let menuItem = () => {
+let grid = gridFactory();
+
+function menu(){
+    menuList();
+
+}
+
+let menuList = () => {
 
 
 
@@ -22,17 +33,10 @@ let menuItem = () => {
                 menuItem.setAttribute("class", "menuItem");
                 menuItem.setAttribute("id", "menuItem" + `${i}`);
 
-            menuGrid.appendChild(menuItem);
+            grid.menuGrid.appendChild(menuItem);
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
-
-        return {
-            menuItem,
-        }
     };
-
-
-
 }
 
 
@@ -60,4 +64,4 @@ let matchaBread = foodItem("matcha bread", "4.00");
 
 let menuArray = [matchaBread, breadLoaf]
 
-export { menu, menuItem }
+export { menu }
