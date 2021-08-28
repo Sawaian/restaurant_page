@@ -78,15 +78,25 @@ function tab(){
 
 
 function pageClear(){
+    let paragraph = document.querySelectorAll('.homeParagraph');
+    let menuList = document.querySelectorAll(".menuItem");
+    let menuGrid = document.querySelector(".menuGrid");
+
     if(menuTab != true){
-        let menuList = document.querySelectorAll(".menuItem");
-        let menuGrid = document.querySelector(".menuGrid")
+        
         for(let i = 0; i < menuList.length; i++){
             menuList[i].remove()
         }
        
     
          };
+
+    if(home != true){
+
+            for(let i = 0; i < paragraph.length; i++){
+                paragraph[i].remove()
+            }
+        }
     }
 navBar();
 console.log("simple");

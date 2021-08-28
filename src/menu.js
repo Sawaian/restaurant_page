@@ -64,4 +64,4 @@ let matchaBread = foodItem("matcha bread", "4.00");
 
 let menuArray = [matchaBread, breadLoaf]
 
-export { menu }
+export { menu, grid }

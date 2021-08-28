@@ -5,11 +5,11 @@ let content = document.getElementById("content");
 function homePage(){
 
 let homePageBody = document.createElement("div");
-homePageBody.classList.add("homePage");
+homePageBody.setAttribute("id", "homePage");
 
+content.appendChild(homePageBody);
 homePageBody.appendChild(paragraphFunc("Welcome to Toasties!"));
 homePageBody.appendChild(paragraphFunc( "We serve the freshest bread at the best prices!"));
-content.appendChild(homePageBody);
 
 
 
@@ -21,6 +21,7 @@ function paragraphFunc(info){
 
     let paragraph = document.createElement("p");
     paragraph.textContent = info;
+    paragraph.setAttribute("class", "homeParagraph");
     return paragraph;
 
 }
