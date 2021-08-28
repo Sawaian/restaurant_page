@@ -24,6 +24,16 @@
    grid-row: 2;
 }
 
+#menuButton{
+   margin: auto;
+   border-radius: 10px;
+}
+
+#homeButton{
+   margin: auto;
+   border-radius: 10px;
+}
+
 .menuItem{
    margin: auto;
    margin: 10px 10px 10px 10px;
