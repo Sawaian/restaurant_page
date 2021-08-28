@@ -2,6 +2,7 @@
    width:  100vh;
    height:  25vh;
    grid-row: 1;
+   margin: auto;
 }
 
 .menuGrid{
@@ -14,11 +15,17 @@
 
 .homePage{
    display: grid;
+   margin: auto;
    
+}
+
+.homeParagraph{
+   margin: auto;
 }
 
 #navBar{
    display: grid;
+   margin: auto;
    width: 300px;
    height: 100px;
    border: solid;
@@ -52,7 +59,14 @@
    box-sizing: border-box;
 }
 
-
+.menuItem{
+   display: grid;
+   width: 200px;
+   height: 75px;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+}
 #menuItem0{
    grid-column: 2;
    border: solid;
