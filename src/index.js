@@ -1,15 +1,24 @@
 
 import { homePage } from './homepage';
-import { menu } from './menu';
+import { menu, grid} from './menu';
 import './styles.css';
-
-
 
 let content = document.getElementById("content");
 let home = false;
 let menuTab = false;
 
+const siteImage = () => { 
+    let toastiesBakery = document.createElement("img");
+        toastiesBakery.classList.add("homeBakery");
+        toastiesBakery.src = "baked_goods.png";
+        content.appendChild(toastiesBakery);
+}
+
+
+
+
 const navMenu = (() => {
+    siteImage();
     let navBar = document.createElement("div");
     navBar.setAttribute("id", "navBar");
     content.appendChild(navBar);
@@ -66,10 +75,13 @@ function tab(){
 function pageClear(){
     if(menuTab != true){
         let menuList = document.querySelectorAll(".menuItem");
+        let menuGrid = document.querySelector(".menuGrid")
         for(let i = 0; i < menuList.length; i++){
             menuList[i].remove()
         }
-        };
+       
+    
+         };
     }
 navBar();
 console.log("simple");

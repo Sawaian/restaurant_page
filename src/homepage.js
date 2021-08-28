@@ -5,16 +5,13 @@ let content = document.getElementById("content");
 function homePage(){
 
 let homePageBody = document.createElement("div");
-let toastiesBakery = document.createElement("img");
-
 homePageBody.classList.add("homePage");
+
+homePageBody.appendChild(paragraphFunc("Welcome to Toasties!"));
+homePageBody.appendChild(paragraphFunc( "We serve the freshest bread at the best prices!"));
 content.appendChild(homePageBody);
 
- 
-toastiesBakery.classList.add("homeBakery");
-toastiesBakery.src = "baked_goods.png";
 
-content.appendChild(toastiesBakery);
 
 // homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
 
