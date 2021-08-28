@@ -61,7 +61,6 @@ function paragraphFunc(info){
 let matcha = document.createElement("img");
 matcha.classList.add("homeBakery");
 matcha.src = "matcha.png";
-menuItem[i].appendChild(matcha);
 
 let breadLoaf = foodItem("bread loaf", "2.00");
 let matchaBread = foodItem("matcha bread", "4.00");
