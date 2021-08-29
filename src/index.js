@@ -1,4 +1,5 @@
 
+import { contact } from './contact';
 import { homePage } from './homepage';
 import { menu, grid} from './menu';
 import './styles.css';
@@ -6,6 +7,7 @@ import './styles.css';
 let content = document.getElementById("content");
 let home = false;
 let menuTab = false;
+let contactTab = false;
 
 const siteImage = () => { 
     let toastiesBakery = document.createElement("img");
@@ -41,6 +43,7 @@ const navMenu = (() => {
     return { 
         homepage,
         menuBtn,
+        contactBtn,
     }
     })();
 
@@ -49,6 +52,7 @@ function navBar (){
         if(home != true){
         home = true;
         menuTab = false;
+        contactTab = false;
         tab();
         }
     });
@@ -57,6 +61,16 @@ function navBar (){
         if(menuTab != true){
         menuTab = true;
         home = false;
+        contactTab = false;
+        tab();
+        console.log("working");
+    }
+    })
+    navMenu.contactBtn.addEventListener('click', ()=> {
+        if(contactTab != true){
+        contactTab = true;
+        home = false;
+        menuTab = false;
         tab();
         console.log("working");
     }
@@ -73,6 +87,10 @@ function tab(){
         pageClear();
         menu();
         console.log("menu made");
+    }
+    if(contactTab === true){
+        pageClear();
+        contact();
     }
 }
 
@@ -92,6 +110,13 @@ function pageClear(){
          };
 
     if(home != true){
+
+            for(let i = 0; i < paragraph.length; i++){
+                paragraph[i].remove()
+            }
+        }
+
+        if(contactTab != true){
 
             for(let i = 0; i < paragraph.length; i++){
                 paragraph[i].remove()
