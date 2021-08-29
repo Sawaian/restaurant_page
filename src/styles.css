@@ -11,10 +11,12 @@
 .menuGrid{
    display: grid;
    box-sizing: border-box;
+   border: solid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(8, 1fr) ;
    grid-row: 3;
    grid-column: 2;
+   background-color: whitesmoke;
 }
 
 #homePage{
@@ -22,6 +24,7 @@
    margin: auto;
    grid-row: 3;
    grid-column: 2;
+
    
 }
 
@@ -46,6 +49,11 @@
 }
 
 #homeButton{
+   margin: auto;
+   border-radius: 10px;
+}
+
+#contactButton{
    margin: auto;
    border-radius: 10px;
 }
@@ -83,6 +91,7 @@
    display: grid;
    grid-template-rows: 1fr 106px 60vh;
    grid-template-columns: 1fr 1fr 1fr;
+   background-color: wheat;
 }
 
 #menuBar{
