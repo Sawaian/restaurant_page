@@ -1,8 +1,11 @@
 .homeBakery{
-   width:  100vh;
-   height:  25vh;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   width: 1500px;
+   height: 30vh;
    grid-row: 1;
-   margin: auto;
+   object-fit: cover;
+   margin: auto; 
 }
 
 .menuGrid{
@@ -21,6 +24,7 @@
 
 .homeParagraph{
    margin: auto;
+   grid-row: 2;
 }
 
 #navBar{
