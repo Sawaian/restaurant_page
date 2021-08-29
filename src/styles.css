@@ -14,17 +14,19 @@
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(8, 1fr) ;
    grid-row: 3;
+   grid-column: 2;
 }
 
-.homePage{
+#homePage{
    display: grid;
    margin: auto;
+   grid-row: 3;
+   grid-column: 2;
    
 }
 
 .homeParagraph{
    margin: auto;
-   grid-row: 2;
 }
 
 #navBar{
@@ -32,10 +34,10 @@
    margin: auto;
    width: 300px;
    height: 100px;
-   border: solid;
    grid-template-columns: 100px 100px 100px;
    grid-template-rows: 1fr;
    grid-row: 2;
+   grid-column: 2;
 }
 
 #menuButton{
@@ -51,11 +53,35 @@
 .menuItem{
    margin: auto;
    margin: 10px 10px 10px 10px;
+   font-size: medium;
+   text-decoration: tomato;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    transition: width 2s, height 2s, background-color 2s, transform 0.5s;
+}
+
+
+#menuItem0:hover {
+   background-color: #FFCCCC;
+   width: 200px;
+   height: 150px;
+   transform: scale(1);
+   background-image:url("/dist/matcha.png");
+}
+
+#menuItem1:hover {
+   background-color: #FFCCCC;
+   width: 200px;
+   height: 150px;
+   transform: scale(1);
+   background-image:url("/dist/breadLoaf.png");
 }
 
 #content{
    display: grid;
-   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 106px 60vh;
    grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -74,11 +100,9 @@
 }
 #menuItem0{
    grid-column: 2;
-   border: solid;
 }
 
 #menuItem1{
    grid-column: 3;
-   border: solid;
 }
 
