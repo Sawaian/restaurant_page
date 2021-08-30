@@ -40,11 +40,17 @@ let menuList = () => {
     
     for(let i = 0; i < menuArray.length; i++){
             let menuItem = document.createElement("div");
+            let menuImage = document.createElement("div")
+
         
                 menuItem.setAttribute("class", "menuItem, text");
                 menuItem.setAttribute("id", "menuItem" + `${i}`);
 
+                menuImage.setAttribute("class", "menuImage");
+                menuImage.setAttribute("id", "menuImage" + `${i}`);
+
             grid.menuGrid.appendChild(menuItem);
+            grid.menuGrid.appendChild(menuImage);
 
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}` + "         " +  `${menuArray[i].foodPrice}`));
             // menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));

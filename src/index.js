@@ -102,13 +102,16 @@ function tab(){
 function pageClear(){
     let paragraph = document.querySelectorAll('.text');
     let menuList = document.querySelectorAll(".menuItem");
-    let homePage = document.getElementById("homePage");
-    let contactPage = document.getElementById("contactPage");
+    let menuImage = document.querySelectorAll(".menuImage");
 
     if(menuTab != true){
         
         for(let i = 0; i < menuList.length; i++){
-            menuList[i].remove()
+            menuList[i].remove();
+        }
+
+        for(let i = 0; i < menuImage.length; i++){
+            menuImage[i].remove();
         }
        
     
