@@ -5,7 +5,7 @@ import { homePage } from './homepage';
 import './styles.css';
 
 let content = document.getElementById("content");
-let home = false;
+let home = true;
 let menuTab = false;
 let contactTab = false;
 
@@ -50,6 +50,8 @@ const navMenu = (() => {
     let horizontalLine = document.createElement("hr");
     horizontalLine.setAttribute("id", "hrLine");
     content.appendChild(horizontalLine);
+
+
 
 function navBar (){
     navMenu.homepage.addEventListener('click', ()=> {
@@ -131,4 +133,5 @@ function pageClear(){
         }
     }
 navBar();
+tab();
 console.log("simple");

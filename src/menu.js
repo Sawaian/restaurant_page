@@ -11,6 +11,7 @@ content.appendChild(menuGrid);
 return {
     menuGrid,
     content,
+
 }
 
 }
