@@ -1,19 +1,19 @@
 
+
+
+const homeFact = (() => {
 let content = document.getElementById("content");
+let homePageBody = document.createElement("div");
+homePageBody.setAttribute("id", "homePage");
+content.appendChild(homePageBody);
+
+return { homePageBody }
+})();
 
 
 function homePage(){
-
-let homePageBody = document.createElement("div");
-homePageBody.setAttribute("id", "homePage");
-
-content.appendChild(homePageBody);
-homePageBody.appendChild(paragraphFunc("Welcome to Toasties!"));
-homePageBody.appendChild(paragraphFunc( "We serve the freshest bread at the best prices!"));
-
-
-
-// homePageBody.appendChild(paragraphFunc("Welcome to Toasties Bakery!"));
+homeFact.homePageBody.appendChild(paragraphFunc("Welcome to Toasties!"));
+homeFact.homePageBody.appendChild(paragraphFunc( "We serve the freshest bread at the best prices!"));
 
 }
 

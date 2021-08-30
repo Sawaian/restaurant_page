@@ -1,7 +1,7 @@
 
+import { menu, grid} from './menu';
 import { contact } from './contact';
 import { homePage } from './homepage';
-import { menu, grid} from './menu';
 import './styles.css';
 
 let content = document.getElementById("content");
