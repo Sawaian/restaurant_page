@@ -21,7 +21,7 @@ function paragraphFunc(info){
 
     let paragraph = document.createElement("p");
     paragraph.textContent = info;
-    paragraph.setAttribute("class", "homeParagraph");
+    paragraph.setAttribute("class", "text");
     return paragraph;
 
 }

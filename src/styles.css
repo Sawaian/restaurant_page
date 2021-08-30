@@ -45,13 +45,47 @@
 #contactPage{
    display: grid;
    margin: auto;
-   grid-row: 3;
+   grid-row: 4;
    grid-column: 2;
 }
 
-.homeParagraph{
-   margin: auto;
-}
+.text{
+   display: inline-block;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   color: black;
+   margin:auto;
+   animation: fadeIn linear 1s;
+   -webkit-animation: fadeIn linear 1s;
+   -moz-animation: fadeIn linear 1s;
+   -o-animation: fadeIn linear 1s;
+   -ms-animation: fadeIn linear 1s;
+ }
+
+ @keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+ }
+ 
+ @-moz-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+ }
+ 
+ @-webkit-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+ }
+ 
+ @-o-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+ }
+ 
+ @-ms-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+ }
 
 #navBar{
    display: grid;
@@ -66,17 +100,17 @@
 
 #menuButton{
    margin: auto;
-   border-radius: 10px;
+   border: none;
 }
 
 #homeButton{
    margin: auto;
-   border-radius: 10px;
+   border: none;
 }
 
 #contactButton{
    margin: auto;
-   border-radius: 10px;
+   border: none;
 }
 
 .menuItem{

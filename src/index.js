@@ -100,9 +100,8 @@ function tab(){
 
 
 function pageClear(){
-    let paragraph = document.querySelectorAll('.homeParagraph');
+    let paragraph = document.querySelectorAll('.text');
     let menuList = document.querySelectorAll(".menuItem");
-    let menuGrid = document.querySelector(".menuGrid");
 
     if(menuTab != true){
         

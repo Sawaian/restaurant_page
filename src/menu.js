@@ -31,7 +31,7 @@ let menuList = () => {
     for(let i = 0; i < menuArray.length; i++){
             let menuItem = document.createElement("div");
         
-                menuItem.setAttribute("class", "menuItem");
+                menuItem.setAttribute("class", "menuItem, text");
                 menuItem.setAttribute("id", "menuItem" + `${i}`);
 
             grid.menuGrid.appendChild(menuItem);
