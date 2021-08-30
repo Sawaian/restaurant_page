@@ -70,8 +70,8 @@ function paragraphFunc(info){
 
 }
 
-let breadLoaf = foodItem("bread loaf", "2.00");
-let matchaBread = foodItem("matcha bread", "4.00");
+let breadLoaf = foodItem("Bread Loaf", "2.00");
+let matchaBread = foodItem("Matcha Bread", "4.00");
 
 let menuArray = [matchaBread, breadLoaf]
 
