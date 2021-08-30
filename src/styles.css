@@ -24,15 +24,6 @@
    width: 90%;
 }
 
-#breadLine{
-   grid-column-end: 4;
-   grid-column-start: 1;
-   grid-row: 2;
-   border: 1px solid gray;
-   margin: auto;
-   width: 100%;
-}
-
 #homePage{
    display: grid;
    margin: auto;
@@ -67,7 +58,7 @@
    margin: auto;
    width: 300px;
    height: 100px;
-   grid-template-columns: 100px 10px 100px 10px 100px;
+   grid-template-columns: 100px 100px 100px;
    grid-template-rows: 1fr;
    grid-row: 2;
    grid-column: 2;
@@ -76,19 +67,16 @@
 #menuButton{
    margin: auto;
    border: none;
-   grid-column: 3;
 }
 
 #homeButton{
    margin: auto;
    border: none;
-   grid-column: 1;
 }
 
 #contactButton{
    margin: auto;
    border: none;
-   grid-column: 5;
 }
 
 .menuGrid{
@@ -96,7 +84,7 @@
    box-sizing: border-box;
    margin:auto;
    grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: 100px 10px repeat(5, 150px) ;
+   grid-template-rows: 100px repeat(5, 150px) ;
    grid-row: 4;
    grid-column-start: 1;
    grid-column-end: 4;
@@ -111,37 +99,24 @@
    font-family: Arial, Helvetica, sans-serif;
    grid-column-start: 2;
    grid-column-end: 4;
-   grid-row: 1;
    margin: auto;
 }
 
-/* .menuImage{
-      display: inline-block;
-      color: black;
-      margin:auto;
-      animation: fadeIn linear 1s;
-} */
-
-@keyframes slideInFromLeft {
-   0% {opacity:0;}
-   100% {opacity:1;}
- }
-
  #menuImage0{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1;
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-    object-position: 20% 10%;
-    margin-left: 20px;
+    margin: 10px 10px 10px 20px;
     background-image: url("/dist/matchaBread.png");
     background-color: black;
  }
 
  #menuImage1{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 3;
+    margin: 10px 10px 10px 20px;
     background-image:url("/dist/breadLoaf.png");
  }
 
@@ -150,6 +125,29 @@
 }
 
 #menuImage1:hover {
+   opacity: 0.5;
+}
+
+#menuImage2{
+   grid-row: 3;
+   grid-column: 1;
+   margin: 10px 10px 10px 20px;
+   background-image:url("/dist/marbleLoaf.png");
+}
+
+#menuImage2:hover {
+   opacity: 0.5;
+}
+
+#menuImage3{
+   grid-row: 3;
+   grid-column: 3;
+   margin: 10px 10px 10px 20px;
+   background-image:url("/dist/coffeeBun.png");
+}
+
+
+#menuImage3:hover {
    opacity: 0.5;
 }
 
@@ -168,10 +166,20 @@
 }
 #menuItem0{
    grid-column: 2;
-   grid-row: 3;
+   grid-row: 2;
 }
 
 #menuItem1{
+   grid-column: 4;
+   grid-row: 2;
+}
+
+#menuItem2{
+   grid-column: 2;
+   grid-row: 3;
+}
+
+#menuItem3{
    grid-column: 4;
    grid-row: 3;
 }

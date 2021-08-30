@@ -79,7 +79,9 @@ function paragraphFunc(info){
 
 let breadLoaf = foodItem("Bread Loaf", "2.00");
 let matchaBread = foodItem("Matcha Bread", "4.00");
+let coffeeBun = foodItem("Coffee Bun", "2.50")
+let marbleLoaf = foodItem("Marble Loaf", "3.00")
 
-let menuArray = [matchaBread, breadLoaf]
+let menuArray = [matchaBread, breadLoaf, marbleLoaf, coffeeBun]
 
 export { menu, grid }
