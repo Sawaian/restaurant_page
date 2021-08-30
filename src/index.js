@@ -102,6 +102,8 @@ function tab(){
 function pageClear(){
     let paragraph = document.querySelectorAll('.text');
     let menuList = document.querySelectorAll(".menuItem");
+    let homePage = document.getElementById("homePage");
+    let contactPage = document.getElementById("contactPage");
 
     if(menuTab != true){
         
@@ -113,7 +115,6 @@ function pageClear(){
          };
 
     if(home != true){
-
             for(let i = 0; i < paragraph.length; i++){
                 paragraph[i].remove()
             }
@@ -122,7 +123,7 @@ function pageClear(){
         if(contactTab != true){
 
             for(let i = 0; i < paragraph.length; i++){
-                paragraph[i].remove()
+                paragraph[i].remove();
             }
         }
     }

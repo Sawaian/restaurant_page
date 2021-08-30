@@ -24,21 +24,7 @@
    width: 1500px;
 }
 
-.menuGrid{
-   display: grid;
-   box-sizing: border-box;
-   margin:auto;
-   border: solid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(8, 1fr) ;
-   grid-row: 4;
-   grid-column-start: 1;
-   grid-column-end: 4;
-   width: 1500px;
-   height: 500px;
-  
-   background-color: whitesmoke;
-}
+
 
 #homePage{
    display: grid;
@@ -61,10 +47,6 @@
    color: black;
    margin:auto;
    animation: fadeIn linear 1s;
-   -webkit-animation: fadeIn linear 1s;
-   -moz-animation: fadeIn linear 1s;
-   -o-animation: fadeIn linear 1s;
-   -ms-animation: fadeIn linear 1s;
  }
 
  @keyframes fadeIn {
@@ -116,6 +98,22 @@
 #contactButton{
    margin: auto;
    border: none;
+}
+
+.menuGrid{
+   display: grid;
+   box-sizing: border-box;
+   margin:auto;
+   border: solid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(8, 1fr) ;
+   grid-row: 4;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   width: 1500px;
+   height: 500px;
+  
+   background-color: whitesmoke;
 }
 
 #menuSign{
