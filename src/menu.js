@@ -46,8 +46,8 @@ let menuList = () => {
 
             grid.menuGrid.appendChild(menuItem);
 
-            menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
-            menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
+            menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}` + "      " +  `${menuArray[i].foodPrice}`));
+            // menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
     };
 }
 
