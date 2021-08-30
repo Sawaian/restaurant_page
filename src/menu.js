@@ -18,12 +18,22 @@ return {
 let grid = gridFactory();
 
 function menu(){
+    menuSign();
     menuList();
 
 }
 
-let menuList = () => {
+function menuSign(){
+    let menuSign = document.createElement("p");
+    menuSign.setAttribute("id", "menuSign");
+    menuSign.setAttribute("class", "text");
+    menuSign.textContent = "Menu";
+    grid.menuGrid.appendChild(menuSign);
+}
 
+
+
+let menuList = () => {
 
 
     // menuArray.forEach(element => 
@@ -35,6 +45,7 @@ let menuList = () => {
                 menuItem.setAttribute("id", "menuItem" + `${i}`);
 
             grid.menuGrid.appendChild(menuItem);
+
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodName}`));
             menuItem.appendChild(paragraphFunc(`${menuArray[i].foodPrice}`));
     };
@@ -53,6 +64,7 @@ let foodItem = (foodName, foodPrice) => {
 function paragraphFunc(info){
 
     let paragraph = document.createElement("p");
+    paragraph.setAttribute("class", "text");
     paragraph.textContent = info;
     return paragraph;
 
