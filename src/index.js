@@ -40,15 +40,16 @@ const navMenu = (() => {
     contactBtn.textContent = "contact";
     navBar.appendChild(contactBtn);
 
-    let horizontalLine = document.createElement("hr");
-    content.appendChild(horizontalLine);
-
     return { 
         homepage,
         menuBtn,
         contactBtn,
     }
     })();
+
+    let horizontalLine = document.createElement("hr");
+    horizontalLine.setAttribute("id", "hrLine");
+    content.appendChild(horizontalLine);
 
 function navBar (){
     navMenu.homepage.addEventListener('click', ()=> {
