@@ -19,6 +19,7 @@ return {
 let grid = gridFactory();
 
 function menu(){
+    gridFactory();
     menuSign();
     menuList();
 
@@ -84,4 +85,4 @@ let marbleLoaf = foodItem("Marble Loaf", "3.00")
 
 let menuArray = [matchaBread, breadLoaf, marbleLoaf, coffeeBun]
 
-export { menu, grid }
+export { menu, grid, gridFactory}

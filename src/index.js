@@ -1,5 +1,5 @@
 
-import { menu, grid} from './menu';
+import { menu, grid, gridFactory} from './menu';
 import { contact } from './contact';
 import { homePage } from './homepage';
 import './styles.css';
@@ -105,6 +105,8 @@ function pageClear(){
     let paragraph = document.querySelectorAll('.text');
     let menuList = document.querySelectorAll(".menuItem");
     let menuImage = document.querySelectorAll(".menuImage");
+    let menuGrid = document.querySelector(".menuGrid")
+    
 
     if(menuTab != true){
         
@@ -114,8 +116,8 @@ function pageClear(){
 
         for(let i = 0; i < menuImage.length; i++){
             menuImage[i].remove();
+            menuGrid.remove();
         }
-       
     
          };
 

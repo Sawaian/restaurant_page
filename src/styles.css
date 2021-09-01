@@ -31,11 +31,25 @@
    grid-column: 2;
 }
 
+
+
 #contactPage{
    display: grid;
    margin: auto;
+   grid-row: 5;
+   grid-column: 2;
+}
+
+#map{
+   display: block;
+   margin: auto;
    grid-row: 4;
    grid-column: 2;
+   max-width: 80%;
+   max-height: 80%;
+   object-fit: cover;
+   background-image: url("/dist/toastiesLocation.png");
+
 }
 
 .text{
@@ -79,6 +93,12 @@
    border: none;
 }
 
+#contactPage{
+   display: grid;
+   grid-row: 4;
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
 .menuGrid{
    display: grid;
    box-sizing: border-box;

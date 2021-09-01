@@ -16,7 +16,9 @@ let contactDiv = contactFactory();
 
 
 function contact(){
-               
+                    let googleMap = document.createElement("div");
+                    googleMap.setAttribute("id", "map");
+                    contactDiv.contactPage.appendChild(googleMap);
                     contactDiv.contactPage.appendChild(paragraphFunc("123 BreadLane, Washington"));
                   contactDiv.contactPage.appendChild(paragraphFunc( "555-Get-Loaf"));
                 }
