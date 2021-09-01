@@ -43,12 +43,14 @@
 #map{
    display: block;
    margin: auto;
-   grid-row: 4;
-   grid-column: 2;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   grid-column-start: 2;
+   grid-column-start: 3;
    max-width: 80%;
    max-height: 80%;
    object-fit: cover;
-   background-image: url("/dist/toastiesLocation.png");
+   margin: auto;   
 
 }
 
@@ -103,6 +105,18 @@
    height: 80%;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: 100px repeat(5, 150px);
+}
+
+#contact0{
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row: 4;
+}
+
+#contact1{
+   grid-column-start: 2;
+   grid-column-end: 4;
+   grid-row: 5;
 }
 
 .contactText{
