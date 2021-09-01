@@ -19,7 +19,6 @@ return {
 let grid = gridFactory();
 
 function menu(){
-    gridFactory();
     menuSign();
     menuList();
 

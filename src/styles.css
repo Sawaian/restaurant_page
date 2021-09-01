@@ -95,9 +95,21 @@
 
 #contactPage{
    display: grid;
-   grid-row: 4;
+   grid-row-end: 6;
    grid-column-start: 1;
-   grid-column-end: 2;
+   grid-column-end: 5;
+   grid-row-start: 2;
+   width: 80%;
+   height: 80%;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 100px repeat(5, 150px);
+}
+
+.contactText{
+   grid-row-start: 5;
+   grid-row-end: 6;
+   grid-column-start: 2;
+   grid-column-end: 4;
 }
 .menuGrid{
    display: grid;

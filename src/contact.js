@@ -15,18 +15,24 @@ let contactDiv = contactFactory();
 
 
 
+
+
+
 function contact(){
+
                     let googleMap = document.createElement("div");
                     googleMap.setAttribute("id", "map");
                     contactDiv.contactPage.appendChild(googleMap);
                     contactDiv.contactPage.appendChild(paragraphFunc("123 BreadLane, Washington"));
-                  contactDiv.contactPage.appendChild(paragraphFunc( "555-Get-Loaf"));
+                    contactDiv.contactPage.appendChild(paragraphFunc( "555-Get-Loaf"));
+
+
                 }
 
         function paragraphFunc(info){
                  let paragraph = document.createElement("p");
                     paragraph.textContent = info;
-                 paragraph.setAttribute("class", "text");
+                    paragraph.setAttribute("class", "text");
              return paragraph;
             }
 
