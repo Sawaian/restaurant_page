@@ -8,6 +8,7 @@ let content = document.getElementById("content");
 let home = true;
 let menuTab = false;
 let contactTab = false;
+let mapDiv = false;
 
 const siteImage = () => { 
     let toastiesBakery = document.createElement("img");
@@ -59,6 +60,7 @@ function navBar (){
         home = true;
         menuTab = false;
         contactTab = false;
+        mapDiv = false;
         tab();
         }
     });
@@ -67,6 +69,7 @@ function navBar (){
         if(menuTab != true){
         menuTab = true;
         home = false;
+        mapDiv = false;
         contactTab = false;
         tab();
         console.log("working");
@@ -75,6 +78,7 @@ function navBar (){
     navMenu.contactBtn.addEventListener('click', ()=> {
         if(contactTab != true){
         contactTab = true;
+        mapDiv = true;
         home = false;
         menuTab = false;
         tab();
@@ -101,10 +105,20 @@ function tab(){
 }
 
 
-function pageClear(){
+const queryDocs = (() => {
     let paragraph = document.querySelectorAll('.text');
+
+    return { 
+        paragraph,
+    }
+
+})();
+
+function pageClear(){
     let menuList = document.querySelectorAll(".menuItem");
     let menuImage = document.querySelectorAll(".menuImage");
+    let map = document.getElementById("map")
+
     
 
     if(menuTab != true){
@@ -120,15 +134,15 @@ function pageClear(){
          };
 
     if(home != true){
-            for(let i = 0; i < paragraph.length; i++){
-                paragraph[i].remove()
+            for(let i = 0; i < queryDocs.paragraph.length; i++){
+                queryDocs.paragraph[i].remove();
             }
         }
 
         if(contactTab != true){
 
             for(let i = 0; i < paragraph.length; i++){
-                paragraph[i].remove();
+                queryDocs.paragraph[i].remove();
             }
         }
     }
