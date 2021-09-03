@@ -109,40 +109,26 @@ function removeAll(parent){
     if(parent != null){
     while(parent.firstChild){
         parent.removeChild(parent.firstChild);}
+        console.log("work")
     }
 }
 
 function pageClear(){
-    let menuList = document.querySelectorAll(".menuItem");
-    let menuImage = document.querySelectorAll(".menuImage");
     let paragraph = document.querySelectorAll('.text');
-    let map = document.getElementById("map");
-    let homePage = document.querySelector("homePage");
+    let homePage = document.querySelector("#homePage");
+    let menuGrid = document.querySelector(".menuGrid")
+    let contactPage = document.querySelector("#contactPage");
 
-    
-
+    if(contactTab != true){
+        removeAll(contactPage);
+        }
     if(menuTab != true){
-        
-        for(let i = 0; i < menuList.length; i++){
-            menuList[i].remove();
-        }
-
-        for(let i = 0; i < menuImage.length; i++){
-            menuImage[i].remove();
-        }
-
-         if(home != true){
-            removeAll(homePage);
-            }
-        }
-
-        if(contactTab != true){
-            
-            for(let i = 0; i < paragraph.length; i++){
-                paragraph[i].remove();
-            }
-        }
+        removeAll(menuGrid);
     }
+    if(home != true){
+            removeAll(homePage);
+            console.log("lizard")
+            }
+        }
 navBar();
 tab();
-console.log("simple");
