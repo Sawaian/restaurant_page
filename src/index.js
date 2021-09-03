@@ -105,19 +105,19 @@ function tab(){
 }
 
 
-const queryDocs = (() => {
-    let paragraph = document.querySelectorAll('.text');
-
-    return { 
-        paragraph,
+function removeAll(parent){
+    if(parent != null){
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild);}
     }
-
-})();
+}
 
 function pageClear(){
     let menuList = document.querySelectorAll(".menuItem");
     let menuImage = document.querySelectorAll(".menuImage");
-    let map = document.getElementById("map")
+    let paragraph = document.querySelectorAll('.text');
+    let map = document.getElementById("map");
+    let homePage = document.querySelector("homePage");
 
     
 
@@ -130,19 +130,16 @@ function pageClear(){
         for(let i = 0; i < menuImage.length; i++){
             menuImage[i].remove();
         }
-    
-         };
 
-    if(home != true){
-            for(let i = 0; i < queryDocs.paragraph.length; i++){
-                queryDocs.paragraph[i].remove();
+         if(home != true){
+            removeAll(homePage);
             }
         }
 
         if(contactTab != true){
-
+            
             for(let i = 0; i < paragraph.length; i++){
-                queryDocs.paragraph[i].remove();
+                paragraph[i].remove();
             }
         }
     }
