@@ -43,12 +43,13 @@
 #map{
    display: block;
    grid-row-start: 2;
-   grid-row-end: 3;
+   grid-row-end: 5;
    grid-column-start: 2;
    object-fit: cover;
    margin: auto;
-   grid-column-end: 3;
-   margin-left: 30px;
+   grid-column-end: 4;
+   max-width: 100%;
+   max-height: 100%;;
 
 }
 
@@ -108,7 +109,8 @@
 #contact0{
    grid-column-start: 2;
    grid-column-end: 4;
-   grid-row: 4;
+   grid-row: 5;
+   margin: 10px auto;
 }
 
 #contact1{
@@ -132,8 +134,8 @@
    grid-row: 4;
    grid-column-start: 1;
    grid-column-end: 4;
-   width: 80%;
-   height: auto;
+   max-width: 80%;
+   max-height: auto;
    background-color: whitesmoke;
    animation: fadeIn linear 1s;
 }
@@ -227,6 +229,12 @@
    grid-column: 4;
    grid-row: 3;
 }
+
+@media screen and (max-width: 600px) {
+   div.text {
+     font-size: 30px;
+   }
+ }
 
 @keyframes fadeIn {
    0% {opacity:0;}
