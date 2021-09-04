@@ -1,5 +1,5 @@
 
-import { menu, grid, gridFactory} from './menu';
+import { menu,} from './menu';
 import { contact } from './contact';
 import { homePage } from './homepage';
 import './styles.css';

@@ -4,15 +4,23 @@
    width: 100%;
    height: 100%;
    object-fit: cover;
-   grid-row: 1;
    margin: auto; 
+   grid-area: header;
 }
 
 #content{
    display: grid;
    grid-template-rows: 200px 106px 20px 60vh 60vh;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    background-color: wheat;
+   grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr;
+   grid-template-areas: 
+   "header header header header"
+   "nav nav nav nav"
+   "line line line line"
+   "content0 content0 content0 content0"  
+   ;
+   
 }
 
 #hrLine{
@@ -22,15 +30,15 @@
    border: 1px solid gray;
    margin: auto;
    width: 90%;
+   grid-area: line;
 }
 
 #homePage{
    display: grid;
    margin: auto;
-   grid-row: 4;
-   grid-column: 2;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(4, 1fr);
+   grid-template-columns: repeat(3, 0.3fr);
+   grid-template-rows: repeat(3, 0.3fr);
+   grid-area: content0;
 }
 
 #home0{
@@ -63,6 +71,7 @@
    margin: auto;
    grid-row: 5;
    grid-column: 2;
+   grid-area: content0;
 }
 
 #map{
@@ -95,8 +104,7 @@
    height: 100px;
    grid-template-columns: 100px 100px 100px;
    grid-template-rows: 1fr;
-   grid-row: 2;
-   grid-column: 2;
+   grid-area: nav;
 }
 
 #menuButton{
@@ -124,6 +132,7 @@
    height: 80%;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: 100px repeat(5, 150px);
+   grid-area: content0;
 }
 
 #contact0{
@@ -147,7 +156,7 @@
 }
 .menuGrid{
    display: grid;
-   grid-row: 4;
+   grid-area: content0;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
    grid-template-areas: 
